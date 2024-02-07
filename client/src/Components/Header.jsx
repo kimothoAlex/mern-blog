@@ -31,9 +31,12 @@ const Header = () => {
         <Button pill className="w-12 h-10" color="gray">
           <FaMoon />
         </Button>
-        <Button gradientDuoTone="purpleToBlue" outline>
-          SignIn
-        </Button>
+        <Link to={"/sign-in"}>
+          <Button gradientDuoTone="purpleToBlue" outline>
+            SignIn
+          </Button>
+        </Link>
+
         <Navbar.Toggle />
       </div>
       <Navbar.Collapse>
