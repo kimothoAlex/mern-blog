@@ -6,6 +6,7 @@ import Signin from "./Pages/Signin";
 import Signup from "./Pages/Signup";
 import Projects from "./Pages/Projects";
 import Header from "./Components/Header";
+import FooterComp from "./Components/Footer";
 
 const App = () => {
   return (
@@ -19,6 +20,7 @@ const App = () => {
         <Route path="/sign-up" element={<Signup />} />
         <Route path="projects" element={<Projects />} />
       </Routes>
+      <FooterComp />
     </BrowserRouter>
   );
 };
