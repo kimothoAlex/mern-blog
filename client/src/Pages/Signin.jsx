@@ -7,6 +7,7 @@ import {
   signInSuccess,
   signInFailure,
 } from "../redux/user/userSlice";
+import OAUTH from "../Components/OAUTH";
 
 const Signin = () => {
   const navigate = useNavigate();
@@ -108,6 +109,7 @@ const Signin = () => {
                 "Sign In"
               )}
             </Button>
+            <OAUTH />
           </form>
           <div className="flex gap-2 text-sm mt-5">
             <span>Don't have an acount?</span>
