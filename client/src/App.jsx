@@ -11,6 +11,7 @@ import PrivateRoute from "./Components/PrivateRoute";
 
 import CreatePost from "./Pages/CreatePost";
 import IsAdminPrivateRoute from "./Components/IsAdminPrivateRoute";
+import UpdatePost from "./Pages/UpdatePost";
 const App = () => {
   return (
     <BrowserRouter>
@@ -23,6 +24,7 @@ const App = () => {
         </Route>
         <Route element={< IsAdminPrivateRoute />} >
           <Route path="/create-post" element={<CreatePost/>} />
+          <Route path='/update-post/:postId' element={<UpdatePost />} />
         </Route>
         <Route path="/sign-in" element={<Signin />} />
         <Route path="/sign-up" element={<Signup />} />
